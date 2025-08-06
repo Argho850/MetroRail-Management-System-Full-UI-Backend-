@@ -1,0 +1,97 @@
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #f4f4f4;
+}
+.container {
+   width: 80%;
+   margin: auto;
+   padding: 20px;
+}
+header {
+   background: #003087;
+   color: white;
+   padding: 10px 0;
+   text-align: center;
+}
+nav {
+   background: #0055a4;
+   padding: 10px;
+}
+nav a {
+   color: white;
+   margin: 0 15px;
+   text-decoration: none;
+}
+nav a:hover {
+   text-decoration: underline;
+}
+.welcome {
+   text-align: center;
+   padding: 50px;
+   background: url('../images/metro_logo.png') no-repeat center;
+   background-size: cover;
+}
+.form-container {
+   background: white;
+   padding: 20px;
+   margin: 20px auto;
+   width: 400px;
+   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.form-container input, .form-container button {
+   width: 100%;
+   padding: 10px;
+   margin: 10px 0;
+}
+.form-container button {
+   background: #0055a4;
+   color: white;
+   border: none;
+   cursor: pointer;
+}
+.form-container button:hover {
+   background: #003087;
+}
+.panel {
+   background: white;
+   padding: 20px;
+   margin: 20px 0;
+   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+table {
+   width: 100%;
+   border-collapse: collapse;
+   margin: 20px 0;
+}
+table, th, td {
+   border: 1px solid #ddd;
+}
+th, td {
+   padding: 10px;
+   text-align: left;
+}
+th {
+   background: #0055a4;
+   color: white;
+}
+.flash {
+   background: #ffcccc;
+   padding: 10px;
+   margin: 10px 0;
+   text-align: center;
+}
+.system-balance-btn {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    border-radius: 12px;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    pointer-events: none;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
