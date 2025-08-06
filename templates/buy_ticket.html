@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Buy Ticket{% endblock %}
+{% block content %}
+<div class="panel">
+   <h2>Buy Ticket</h2>
+   <form method="POST">
+       <select name="train_id" required>
+           <option value="">Select Train</option>
+           {% for train in trains %}
+           <option value="{{ train.id }}">{{ train.train_name }} ({{ train.train_number }}) - {{ train.source }} to {{ train.destination }} at {{ train.departure_time }} - BDT {{ train.fare }}</option>
+           {% endfor %}
+       </select>
+       <button type="submit">Proceed to Payment</button>
+   </form>
+</div>
+{% endblock %}

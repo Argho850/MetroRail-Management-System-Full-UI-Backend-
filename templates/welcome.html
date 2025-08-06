@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Welcome - Metro Rail{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <img src="{{ url_for('static', filename='images/metro_logo.png') }}" alt="Metro Rail" class="img-fluid mb-4" style="max-height: 200px;">
+    
+    <h2 class="mb-3">Welcome to <span class="text-primary">Bangladesh Metro Rail</span></h2>
+    <p class="mb-4">Choose an option to proceed:</p>
+
+    <div class="d-flex justify-content-center gap-3">
+        <a href="{{ url_for('admin_login') }}" class="btn btn-primary btn-lg">Admin Sign In</a>
+        <a href="{{ url_for('user_login') }}" class="btn btn-success btn-lg">User Sign In</a>
+    </div>
+</div>
+{% endblock %}

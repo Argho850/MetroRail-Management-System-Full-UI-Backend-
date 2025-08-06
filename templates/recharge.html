@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Recharge Rapid Pass{% endblock %}
+{% block content %}
+<div class="panel">
+   <h2>Recharge Rapid Pass</h2>
+   <form method="POST">
+       <input type="number" name="amount" placeholder="Amount (BDT)" step="0.01" required>
+       <button type="submit">Proceed to Payment</button>
+   </form>
+</div>
+{% endblock %}

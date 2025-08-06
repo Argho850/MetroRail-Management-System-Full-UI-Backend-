@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}User Panel{% endblock %}
+{% block content %}
+<div class="panel">
+   <h2>Welcome, {{ session.user_username }}</h2>
+   <p>Rapid Pass Balance: BDT {{ balance }}</p>
+   <a href="{{ url_for('buy_ticket') }}" class="btn btn-primary">Buy Ticket</a>
+   <a href="{{ url_for('recharge') }}" class="btn btn-primary">Recharge Rapid Pass</a>
+   <a href="{{ url_for('view_trains') }}" class="btn btn-primary">See Available Trains</a>
+ 
+</div>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}Available Trains{% endblock %}
+{% block content %}
+<div class="panel">
+   <h2>Available Trains</h2>
+   <table>
+       <tr>
+           <th>Train Number</th>
+           <th>Name</th>
+           <th>Source</th>
+           <th>Destination</th>
+           <th>Departure</th>
+           <th>Fare</th>
+       </tr>
+       {% for train in trains %}
+       <tr>
+           <td>{{ train.train_number }}</td>
+           <td>{{ train.train_name }}</td>
+           <td>{{ train.source }}</td>
+           <td>{{ train.destination }}</td>
+           <td>{{ train.departure_time }}</td>
+           <td>{{ train.fare }}</td>
+       </tr>
+       {% endfor %}
+   </table>
+</div>
+{% endblock %}

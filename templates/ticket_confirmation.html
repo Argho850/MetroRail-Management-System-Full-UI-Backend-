@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ticket Purchased</title>
+    <style>
+        .success-message {
+            background-color: #d4edda;
+            color: #155724;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .download-btn, .home-btn {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .home-btn {
+            background-color: #007bff;
+        }
+        .home-btn:hover {
+            background-color: #0069d9;
+        }
+        .download-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="success-message">
+        Ticket successfully purchased!
+    </div>
+
+    <!-- Download Ticket Button -->
+    <form action="{{ url_for('download_ticket') }}" method="get">
+        <button type="submit" class="download-btn">Download Ticket</button>
+    </form>
+
+    <!-- Go to Dashboard Button -->
+    <form action="{{ url_for('user_panel') }}" method="get">
+        <button type="submit" class="home-btn">Go to Dashboard</button>
+    </form>
+</body>
+</html>
